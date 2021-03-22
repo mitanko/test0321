@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
-    public function index($id = "建物です")
+    public function index()
     {
-        return $id;
+        return "建物です";
+    }
+    public function room($room)
+    {
+        return "部屋番号は" .$room. "です";
     }
 }
